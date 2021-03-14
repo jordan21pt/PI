@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+
 
 void swapM (int *x, int *y){
     int temp = *y;
@@ -13,7 +15,19 @@ void swap (int v[], int i, int j){
 }
 
 void inverteArray (int v[], int N){
-    while()
+    int i, j;
+
+    i = 0;
+    j = N-1;
+
+    while(i<j)
+    {
+        int temp = v[i];
+        v[i] = v[j];
+        v[j] = temp;
+        i++;
+        j--;
+    }
 }
 
 void dumpV (int v[], int N){
@@ -39,11 +53,12 @@ int maximum (int v[], int N, int *m){
 }
 
 void quadrados (int q[], int N){
-    //...
+    int i;
+    for (i = 0; i < N; i++) q[i] = pow(i, 2);   
 }
 
 void pascal (int v[], int N){
-    //...
+    
 }
 
 void desenhaTriangulpP (int N){
@@ -78,7 +93,6 @@ int main()
     x = maximum (v,10, &y);
     printf ("O maior elemento de "); dumpV (v,10);
     printf ("é %d\n", y);
-
     printf ("Os 10 primeiros quadrados: "); 
     quadrados (v,10); 
     dumpV (v,10);
