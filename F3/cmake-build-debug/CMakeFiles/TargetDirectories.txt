@@ -1,3 +1,0 @@
-/home/jordi/Desktop/PI/F3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/jordi/Desktop/PI/F3/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/jordi/Desktop/PI/F3/cmake-build-debug/CMakeFiles/F3.dir
